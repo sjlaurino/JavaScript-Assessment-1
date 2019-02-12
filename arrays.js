@@ -1,6 +1,7 @@
 //1. What is the lenth of the following contacts array?
-
-var contacts = [];
+--undefined--
+	
+	var contacts = [];
 
 
 //2. Add the following people to the contacts array.
@@ -32,6 +33,11 @@ var tom = {
 	title: 'instructor'
 };
 
+contacts.push(jake, matt, tony, andrew, tom)
+console.log(contacts)
+
 
 //3. Woops after adding all of those people to the same contacts list you realized you need a list just the instructors. Create a new variable named instructors populate it using contacts array. 
 
+let instructors = []
+instructors.push(tony, andrew, tom)

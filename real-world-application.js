@@ -58,10 +58,34 @@ var crayola1990 = [
 	'Antique Brass'
 ];
 
+crayola1990.forEach(function (arr) {
+	let letters = arr.split('')
+	for (let i = 0; i < letters.length; i++) {
+		let letter = letters[i]
+		if (letter == ' ') {
+			letters[i] = '-'
+		}
+	}
+	let newStr = letters.join('')
+	console.log(newStr)
+})
+
+newStr.forEach(function (color) {
+	let newCol = color
+	let splitCol = newCol.split(' ')
+	for (let i = 0; i < splitCol.length; i++) {
+		let word = splitCol[i]
+		let lower = splitCol[i].toLowerCase()
+		console.log(lower)
+	}
+})
+
+// both functions working, How do i get them linked??
+
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
 /***** HINTS *******
  * remember strings are immutable but the value of a variable can be adjusted as often as needed.
- * take advantage of the methods available on stings http://www.w3schools.com/js/js_string_methods.asp
+ * take advantage of the methods available on strings http://www.w3schools.com/js/js_string_methods.asp
  * there are multiple ways to do something like this but you might consider using split and join
- */ 
+ */
